@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  max-width: 1188px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -105,6 +105,23 @@ address {
 
 /* ---------------------------  HERO ----------------------- */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+section {
+  padding-bottom: 120px;
+}
+
 .hero-sect {
   background-color: #2e2f42;
 }
@@ -154,7 +171,6 @@ img {
 .hero-block {
   display: flex;
   padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .hero-block-list {
@@ -202,28 +218,33 @@ img {
 
 .hero-our-team {
   background-color: #f4f4fd;
-  padding-bottom: 120px;
 }
 
 .hero-team {
+  border-radius: 0 0 4px 4px;
   line-height: 1.333;
   display: flex;
   align-items: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .hero-team-card {
   background-color: #fff;
-  width: calc((100% - 2 * 24px) / 3);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-card-scnd {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
+  max-width: 360px;
   margin-bottom: 32px;
 }
+
 .hero-names {
   font-weight: 500;
   font-size: 20px;
