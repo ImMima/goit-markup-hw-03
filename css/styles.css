@@ -1,5 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -10,6 +27,24 @@ body {
   background-color: #fff;
 }
 
+.container {
+  max-width: 1188px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*  --------------------- HEADER -----------------------------  */
+
+.navg {
+  display: flex;
+  align-items: center;
+}
+
+.header-cont {
+  display: flex;
+  padding: 24px 0;
+}
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -18,18 +53,37 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .accent {
   color: #2e2f42;
 }
 
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.address-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu-adr {
+  display: flex;
+  gap: 40px;
+}
 .header-link {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-link:hover,
@@ -49,8 +103,15 @@ address {
   color: #434455;
 }
 
+/* ---------------------------  HERO ----------------------- */
+
 .hero-sect {
   background-color: #2e2f42;
+}
+.hero-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-title {
   color: #ffffff;
@@ -59,6 +120,9 @@ address {
   letter-spacing: 0.02em;
   line-height: 1.07;
   text-align: center;
+  max-width: 496px;
+  margin-bottom: 24px;
+  padding-top: 188px;
 }
 
 .hero-button {
@@ -70,10 +134,43 @@ address {
   letter-spacing: 0.04em;
   text-align: center;
   cursor: pointer;
+  height: 56px;
+  min-width: 169px;
+  border-radius: 4px;
+  margin-top: 24px;
+  margin-bottom: 188px;
+  border: none;
 }
+
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
+}
+
+img {
+  display: block;
+}
+
+.hero-block {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.hero-block-list {
+  display: flex;
+  gap: 24px;
+}
+
+.charast {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.hero-featr-cont {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 48px;
 }
 
 .hero-list {
@@ -99,16 +196,33 @@ address {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .hero-our-team {
   background-color: #f4f4fd;
+  padding-bottom: 120px;
 }
+
 .hero-team {
   line-height: 1.333;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 120px;
 }
+
 .hero-team-card {
   background-color: #fff;
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.team-card-scnd {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  margin-bottom: 32px;
 }
 .hero-names {
   font-weight: 500;
@@ -117,6 +231,8 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .hero-jobs {
@@ -126,7 +242,10 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  padding-bottom: 32px;
 }
+
+/* --------------------------- FOOTER -------------------------- */
 
 .page-footer {
   color: #f4f4fd;
@@ -135,6 +254,10 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: block;
+  gap: 16px;
 }
 
 .footer-logo {
@@ -148,4 +271,9 @@ address {
 }
 .accent-footer {
   color: #f4f4fd;
+}
+
+.footer-text {
+  margin-top: 16px;
+  max-width: 264px;
 }
