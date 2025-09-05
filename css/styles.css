@@ -35,8 +35,7 @@ body {
 
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -181,6 +180,9 @@ img {
   display: flex;
   gap: 24px;
 }
+.hero-charast {
+  padding: 120px 0;
+}
 
 .charast {
   width: calc((100% - 3 * 24px) / 4);
@@ -200,6 +202,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .hero-list-description {
@@ -217,7 +220,7 @@ img {
   color: #2e2f42;
   text-transform: capitalize;
   padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .hero-our-team {
@@ -230,7 +233,11 @@ img {
   line-height: 1.333;
   display: flex;
   align-items: center;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.name-cont {
+  padding: 32px 0;
 }
 
 .hero-team-card {
@@ -238,16 +245,14 @@ img {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-
   width: calc((100% - 3 * 24px) / 4);
+}
+.features {
+  padding: 120px 0;
 }
 
 .team-card-scnd {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
   max-width: 360px;
-  margin-bottom: 32px;
 }
 
 .hero-names {
@@ -269,6 +274,13 @@ img {
   text-align: center;
   color: #434455;
   padding-bottom: 32px;
+}
+.app {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+
+  padding: 32px 16px;
 }
 
 /* --------------------------- FOOTER -------------------------- */
